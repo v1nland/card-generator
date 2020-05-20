@@ -6,14 +6,26 @@ import { exportComponentAsJPEG, exportComponentAsPDF, exportComponentAsPNG } fro
 class ComponentToPrint extends React.Component {
     render(){
         return (
-            <div className="blog-card">
-                nombre: lalalalalal
-                direccion: kasksksksk
+                <div className="blog-card">
+                  <h1>Papeleria.Gatobacam</h1>
+                  <div className="datos-usario">
+                    <p>Nombre: Valentina almendra gonzalez gonzalez</p>
+                    <p>Rut: 19994721-4 </p>
+                    <p>Celular: 950731812  </p>
+                    <p>Dirección:    </p>
+                  </div>
+                    
+                  <h2><u><center>Muchas gracias por tu compra</center></u></h2>
 
-                <h1>Bale Bale</h1>
-                <h2>¡Gracias por tu compra!</h2>
-            </div>
-        );
+                  <div className="datos-bbr">
+                    <p>Remitente: Bárbara Inayado Araya</p>
+                    <p>Rut: 19.513.795-1</p>
+                    <p>Celular: 930777736</p>
+                  </div>
+                </div>
+
+
+       );
     }
 }
 

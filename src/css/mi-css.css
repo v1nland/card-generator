@@ -1,0 +1,14 @@
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 7px -1px rgba(#000, .1);
+    background: #fff;
+    line-height: 1.4;
+    font-family: sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+    width: 269px;
+    height: 184px;
+    margin: 10px;
+}

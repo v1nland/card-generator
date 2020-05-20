@@ -7,23 +7,11 @@ class ComponentToPrint extends React.Component {
     render(){
         return (
             <div className="blog-card">
-                <div className="description">
+                nombre: lalalalalal
+                direccion: kasksksksk
 
-                <ul className="details">
-                    <li className="author"><FontAwesomeIcon icon={FontAwesome.faCalendar} /> John Doe</li>
-                    <li className="date"><FontAwesomeIcon icon={FontAwesome.faCalendar} /> Aug. 24, 2015</li>
-                    <li className="tags">
-                        <ul>
-                            <FontAwesomeIcon icon={FontAwesome.faCalendar} />
-                            &nbsp;
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Code</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                    <h1>Papeleria GatoBacam Bale Bale</h1>
-                    <h2>¡Gracias por tu compra!</h2>
-                </div>
+                <h1>Bale Bale</h1>
+                <h2>¡Gracias por tu compra!</h2>
             </div>
         );
     }

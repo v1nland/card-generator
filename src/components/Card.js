@@ -7,30 +7,22 @@ class ComponentToPrint extends React.Component {
     render(){
         return (
             <div className="blog-card">
-                <div className="meta">
-                    <div className="photo"></div>
-                        <ul className="details">
-                            <li className="author"><FontAwesomeIcon icon={FontAwesome.faCalendar} /> <a href="#">John Doe</a></li>
-                            <li className="date"><FontAwesomeIcon icon={FontAwesome.faCalendar} /> Aug. 24, 2015</li>
-                            <li className="tags">
-                                <ul>
-                                    <FontAwesomeIcon icon={FontAwesome.faCalendar} />
-                                    &nbsp;
-                                    <li><a href="#">Learn</a></li>
-                                    <li><a href="#">Code</a></li>
-                                    <li><a href="#">HTML</a></li>
-                                    <li><a href="#">CSS</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
                 <div className="description">
-                    <h1>Learning to Code</h1>
-                    <h2>Opening a door to the future</h2>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-                    <p className="read-more">
-                        <a href="#">Read More</a>
-                    </p>
+
+                <ul className="details">
+                    <li className="author"><FontAwesomeIcon icon={FontAwesome.faCalendar} /> John Doe</li>
+                    <li className="date"><FontAwesomeIcon icon={FontAwesome.faCalendar} /> Aug. 24, 2015</li>
+                    <li className="tags">
+                        <ul>
+                            <FontAwesomeIcon icon={FontAwesome.faCalendar} />
+                            &nbsp;
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Code</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    <h1>Papeleria GatoBacam Bale Bale</h1>
+                    <h2>¡Gracias por tu compra!</h2>
                 </div>
             </div>
         );

@@ -1,32 +1,55 @@
 .blog-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 3px 7px -1px rgba(#000, .1);
+    /* box-shadow: 0 3px 7px -1px rgba(#000, .1); */
     background: #fff;
     line-height: 0;
-    font-family: sans-serif;
-    border-radius: 5px;
     overflow: hidden;
-    z-index: 0;
     width: 270px;
     height: 188px;
     margin: 10px;
     font-size: 10px;
+    padding: 5px;
+    border: 2px solid black;
 }
 
 h1{
-    font-size: 18px;
-    color: #0abde3;
+    font-size: 25px;
+    color: #07bec5;
+    font-family: Alexandra;
+
+}
+h2{
+  font-family: Boulevard;
+  font-size: 15px;
 }
 .datos-usuario{
-    font-size: 15px;
+    font-size: 13px;
+    font-family: Brandon;
+    line-height: 3px;
 }
 .datos-bbr {
-    color: #0abde3;
-    font-size: 11px;
+    color: #07bec5;
+    font-size: 13px;
     line-height: 0;
+    font-family: Brandon;
+}
+.logo{
+  width: 100px;
+  position: absolute;
+  top: 8px; left: 210px;
+
+
 }
 @font-face {
     font-family: Boulevard;
     src: url("../fonts/Boulevard.otf") format("opentype");
+}
+@font-face {
+    font-family: Alexandra;
+    src: url("../fonts/alexandra-demo.ttf") format("opentype");
+}
+@font-face {
+    font-family: Brandon;
+    src: url("../fonts/Brandongrotesque.otf") format("opentype");
 }

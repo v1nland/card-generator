@@ -17,12 +17,16 @@
 h1{
     font-size: 18px;
     color: #0abde3;
-  }
+}
 .datos-usuario{
-  font-size: 15px;
+    font-size: 15px;
 }
 .datos-bbr {
-  color: #0abde3;
-  font-size: 11px;
-  line-height: 0;
+    color: #0abde3;
+    font-size: 11px;
+    line-height: 0;
+}
+@font-face {
+    font-family: Boulevard;
+    src: url("../fonts/Boulevard.otf") format("opentype");
 }

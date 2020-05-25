@@ -1,13 +1,12 @@
 import React from 'react';
-import Card from './components/Card';
+import Home from './pages/Home';
 
 function App() {
-    // La tarjeta debe ser de 269px x 184px
-  return (
-    <div className="App">
-        <Card />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Home />
+        </div>
+    );
 }
 
 export default App;

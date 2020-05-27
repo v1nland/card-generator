@@ -28,12 +28,17 @@ class Home extends Component{
                 newElem.push(this.state.csv[i][36])
                 newElem.push(this.state.csv[i][37])
                 newElem.push(this.state.csv[i][13])
+                newElem.push(this.state.csv[i][30])
+                newElem.push(this.state.csv[i][0])
 
                 if (i+1 < this.state.csv.length) {
                     newElem.push(this.state.csv[i+1][12])
                     newElem.push(this.state.csv[i+1][36])
                     newElem.push(this.state.csv[i+1][37])
                     newElem.push(this.state.csv[i+1][13])
+                    newElem.push(this.state.csv[i+1][30])
+                    newElem.push(this.state.csv[i+1][0])
+
                 }
 
                 this.state.newCsv.push(newElem);
@@ -50,15 +55,19 @@ class Home extends Component{
                     rutUsuario={FormatRUT(csvData[1])}
                     celularUsuario={csvData[2]}
                     direccionUsuario={csvData[3]}
+                    comunaUsuario={csvData[4]}
+                    Npedido={csvData[5]}
                 />
             </Col>
 
             <Col>
                 <Card
-                    nombreUsuario={csvData[4]}
-                    rutUsuario={FormatRUT(csvData[5])}
-                    celularUsuario={csvData[6]}
-                    direccionUsuario={csvData[7]}
+                    nombreUsuario={csvData[6]}
+                    rutUsuario={FormatRUT(csvData[7])}
+                    celularUsuario={csvData[8]}
+                    direccionUsuario={csvData[9]}
+                    comunaUsuario={csvData[10]}
+                    Npedido={csvData[11]}
                 />
             </Col>
         </Row>

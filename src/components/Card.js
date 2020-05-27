@@ -22,13 +22,48 @@ class Card extends Component{
                   <br />
 
                   <div className="datos-usuario">
-                    <p>Nombre: {this.props.nombreUsuario} </p>
-                    <p>RUT: {this.props.rutUsuario}</p>
-                    <p>Celular: {this.props.celularUsuario}</p>
-                    <p>Dirección: {this.props.direccionUsuario}</p>
+                    <table className="tablita">
+
+                      <tr>
+                            <td className="fijacion2">Nombre:</td>
+                            <td className="fijacion">{this.props.nombreUsuario}</td>
+                            <td></td>
+                      </tr>
+
+
+                      <tr>
+                            <td>RUT:</td>
+                            <td>{this.props.rutUsuario} </td>
+                            <td></td>
+                          </tr>
+
+
+                      <tr>
+                            <td>Celular:</td>
+                            <td>{this.props.celularUsuario} </td>
+                            <td>NºPedido: {this.props.Npedido}</td>
+                          </tr>
+
+
+                       <tr>
+                            <td>Dirección:</td>
+                            <td>{this.props.direccionUsuario}</td>
+                            <td></td>
+
+                          </tr>
+
+
+                       <tr>
+                            <td> </td>
+                            <td>{this.props.comunaUsuario} </td>
+                            <td></td>
+                          </tr>
+
+                    </table>
                   </div>
 
                   <br />
+
 
                   <h2><u><center>Muchas gracias por tu compra</center></u></h2>
 

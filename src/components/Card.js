@@ -36,7 +36,7 @@ class Card extends Component{
                             <tr>
                                 <td>Celular:</td>
                                 <td>{this.props.celularUsuario} </td>
-                                { this.props.tipoPedido !== 'Envíos por Starken a domicilio (modalidad por pagar)'?
+                                { this.props.tipoPedido !== 'Starken por pagar (domicilio y retiro en Sucursal)'?
                                     <td className="overlay">Nº Pedido: {this.props.numeroPedido}</td>
                                     :
                                     <td>Nº Pedido: {this.props.numeroPedido}</td>

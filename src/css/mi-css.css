@@ -13,6 +13,10 @@
     margin: 0;
 }
 
+.overlay {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
 .main-container{
     width: 568px;
 }

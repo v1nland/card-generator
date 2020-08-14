@@ -16,6 +16,9 @@
 .overlay {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
+.overlay-empapelate {
+  background: rgb(176, 236, 103); /* WebKit/Blink Browsers */
+}
 
 .main-container{
     width: 568px;

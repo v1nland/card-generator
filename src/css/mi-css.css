@@ -1,77 +1,80 @@
 .blog-card {
-    display: inline-block;
-    flex-direction: column;
-    line-height: 0;
-    overflow: hidden;
-    background-color: #fff;
-    width: 390px;
-    height: 230px;
-    font-size: 10px;
-    padding: 5px;
-    border: 2px solid black;
-    position: relative;
-    margin: 0;
+	display: inline-block;
+	flex-direction: column;
+	line-height: 0;
+	overflow: hidden;
+	background-color: #fff;
+	width: 390px;
+	height: 230px;
+	font-size: 10px;
+	padding: 5px;
+	border: 2px solid black;
+	position: relative;
+	margin: 0;
 }
 
-.overlay {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+.overlay-starken {
+	background: #00a015; /* WebKit/Blink Browsers */
 }
-.overlay-empapelate {
-  background: rgb(176, 236, 103); /* WebKit/Blink Browsers */
+.overlay-delivery {
+	background: #ffb7b7; /* WebKit/Blink Browsers */
 }
-
-.main-container{
-    width: 568px;
-}
-
-.row{
-    display: flex;
-    margin: 0;
+.overlay-correos {
+	background: rgb(176, 235, 104); /* WebKit/Blink Browsers */
 }
 
-.col{
-    padding: 0;
-    margin-bottom: -5px;
+.main-container {
+	width: 568px;
 }
 
-h1{
-    font-size: 28px;
-    color: #07bec5;
-    font-family: Alexandra;
+.row {
+	display: flex;
+	margin: 0;
+}
 
+.col {
+	padding: 0;
+	margin-bottom: -5px;
 }
-h2{
-  font-family: Boulevard;
-  font-size: 15px;
+
+h1 {
+	font-size: 28px;
+	color: #07bec5;
+	font-family: Alexandra;
 }
-.datos-usuario{
-    font-size: 14px;
-    font-family: Brandon;
-    line-height: 13px;
+h2 {
+	font-family: Boulevard;
+	font-size: 15px;
+}
+.datos-usuario {
+	font-size: 14px;
+	font-family: Brandon;
+	line-height: 13px;
 }
 .datos-bbr {
-    color: #07bec5;
-    font-size: 14px;
-    line-height: 3px;
-    font-family: Brandon;
+	color: #07bec5;
+	font-size: 14px;
+	line-height: 3px;
+	font-family: Brandon;
 }
-.logo{
-  width: 160px;
-  position: absolute;
-  top: 0px; left: 270px;
+.logo {
+	width: 160px;
+	position: absolute;
+	top: 0px;
+	left: 270px;
 }
-.fijacion{
-  width: 230px;
-}
-@font-face {
-    font-family: Boulevard;
-    src: url("../fonts/Boulevard.otf") format("opentype");
+.fijacion {
+	width: 230px;
 }
 @font-face {
-    font-family: Alexandra;
-    src: url("../fonts/alexandra-demo.ttf") format("opentype");
+	font-family: Boulevard;
+	src: url("../fonts/Boulevard.otf") format("opentype");
 }
 @font-face {
-    font-family: Brandon;
-    src: url("../fonts/Brandongrotesque.otf") format("opentype");
+	font-family: Alexandra;
+	src: url("../fonts/alexandra-demo.ttf") format("opentype");
+}
+@font-face {
+	font-family: Brandon;
+	src: url("../fonts/Brandongrotesque.otf") format("opentype");
 }

@@ -23,6 +23,7 @@ class Home extends Component {
 		this.setState({ csv: data }, () => {
 			for (var i = 0; i < this.state.csv.length; i = i + 2) {
 				var newElem = [];
+
 				newElem.push(this.state.csv[i][12]); // Letra M: Nombre envio
 				newElem.push(this.state.csv[i][36]); // Letra AK: RUT
 				newElem.push(this.state.csv[i][37]); // Letra AL: Telefono
@@ -30,6 +31,7 @@ class Home extends Component {
 				newElem.push(this.state.csv[i][19]); // Letra T: Municipio de facturacion
 				newElem.push(this.state.csv[i][0]); // Letra A: Numero de pedido
 				newElem.push(this.state.csv[i][20]); // Letra U: Tipo de envío
+				newElem.push(this.state.csv[i][41] || ""); // Letra AP: Envío colorfest
 
 				if (i + 1 < this.state.csv.length) {
 					newElem.push(this.state.csv[i + 1][12]); // Letra M: Nombre envio
@@ -39,11 +41,13 @@ class Home extends Component {
 					newElem.push(this.state.csv[i + 1][19]); // Letra T: Municipio de facturacion
 					newElem.push(this.state.csv[i + 1][0]); // Letra A: Numero de pedido
 					newElem.push(this.state.csv[i + 1][20]); // Letra U: Tipo de envío
+					newElem.push(this.state.csv[i + 1][41] || ""); // Letra AP: Envío colorfest
 				}
 
 				this.state.newCsv.push(newElem);
 			}
 		});
+
 		this.setState({ file: "Archivo subido exitosamente" });
 	}
 
@@ -58,18 +62,20 @@ class Home extends Component {
 					comunaUsuario={csvData[4]}
 					numeroPedido={csvData[5]}
 					tipoPedido={csvData[6]}
+					colorfest={csvData[7]}
 				/>
 			</Col>
 
 			<Col>
 				<Card
-					nombreUsuario={csvData[7]}
-					rutUsuario={FormatRUT(csvData[8])}
-					celularUsuario={csvData[9]}
-					direccionUsuario={csvData[10]}
-					comunaUsuario={csvData[11]}
-					numeroPedido={csvData[12]}
-					tipoPedido={csvData[13]}
+					nombreUsuario={csvData[8]}
+					rutUsuario={FormatRUT(csvData[9])}
+					celularUsuario={csvData[10]}
+					direccionUsuario={csvData[11]}
+					comunaUsuario={csvData[12]}
+					numeroPedido={csvData[13]}
+					tipoPedido={csvData[14]}
+					colorfest={csvData[15]}
 				/>
 			</Col>
 		</Row>

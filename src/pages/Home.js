@@ -24,19 +24,19 @@ class Home extends Component {
 			for (var i = 0; i < this.state.csv.length; i = i + 2) {
 				var newElem = [];
 
-				newElem.push(this.state.csv[i][12]); // Letra M: Nombre envio
-				newElem.push(this.state.csv[i][36]); // Letra AK: RUT
-				newElem.push(this.state.csv[i][37]); // Letra AL: Telefono
-				newElem.push(this.state.csv[i][13]); // Letra N: Direccion de envio
-				newElem.push(this.state.csv[i][19]); // Letra T: Municipio de facturacion
-				newElem.push(this.state.csv[i][0]); // Letra A: Numero de pedido
-				newElem.push(this.state.csv[i][20]); // Letra U: Tipo de envío
-				newElem.push(this.state.csv[i][41] || ""); // Letra AP: Envío colorfest
+				newElem.push(this.state.csv[i][12]); // Letra M: Nombre envio -- ok
+				newElem.push(this.state.csv[i][18]); // Letra AK: RUT -- cambiar por letra S de sapo
+				newElem.push(this.state.csv[i][5]); // Letra AL: Telefono -- cambiar por letra F de foca
+				newElem.push(this.state.csv[i][13]); // Letra N: Direccion de envio -- ok
+				newElem.push(this.state.csv[i][19]); // Letra T: Municipio de facturacion -- ok
+				newElem.push(this.state.csv[i][0]); // Letra A: Numero de pedido -- ok
+				newElem.push(this.state.csv[i][20]); // Letra U: Tipo de envío -- ok
+				newElem.push(this.state.csv[i][41] || ""); // Letra AP: Envío colorfest -- ok
 
 				if (i + 1 < this.state.csv.length) {
 					newElem.push(this.state.csv[i + 1][12]); // Letra M: Nombre envio
-					newElem.push(this.state.csv[i + 1][36]); // Letra AK: RUT
-					newElem.push(this.state.csv[i + 1][37]); // Letra AL: Telefono
+					newElem.push(this.state.csv[i + 1][18]); // Letra AK: RUT
+					newElem.push(this.state.csv[i + 1][5]); // Letra AL: Telefono
 					newElem.push(this.state.csv[i + 1][13]); // Letra N: Direccion de envio
 					newElem.push(this.state.csv[i + 1][19]); // Letra T: Municipio de facturacion
 					newElem.push(this.state.csv[i + 1][0]); // Letra A: Numero de pedido

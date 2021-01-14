@@ -9,13 +9,13 @@ const options = (tipo, num) => {
 			return <td className="overlay-starken">Nº Pedido: {num}</td>;
 		case "Delivery Domicilio $2.500 (Todas las comunas de Santiago), Excluye Lo Barnechea.":
 			return <td className="overlay-delivery">Nº Pedido: {num}</td>;
-		case "Delivery Domicilio $3.500  (Lo Barnechea, Colina, Lampa, Padre Hurtado, Pirque, Calera de Tango, Isla de Maipo, Peñaflor, Talagante, Buin, San Jose de Maipo y Pai":
+		case "Delivery Domicilio $3.500  (Lo Barnechea, Colina, Lampa, Padre Hurtado, Calera de Tango y Buin)":
 			return <td className="overlay-delivery">Nº Pedido: {num}</td>;
-		case "Delivery Domicilio $3.500  (Lo Barnechea, Colina, Lampa, Padre Hurtado, Pirque, Calera de Tango, Isla de Maipo, Peï¿½ï¿½aflor, Talagante, Buin, San Jose de Maipo y Pai":
+		case "Delivery Domicilio $5.000  (Pirque, Isla de Maipo, El Monte, San José de Maipo, Paine, Talagante, Peñaflor y Melipilla)":
 			return <td className="overlay-delivery">Nº Pedido: {num}</td>;
 		case "ENVIO COLORFEST":
 			return <td>Nº Pedido: {num}</td>;
-		case "CORREOS DE CHILE (Domicilio y Retiro sucursal deben ir previamente cancelados, Nos contactaremos a la Brevedad)":
+		case "CORREOS DE CHILE $3.500 (Domicilio y Retiro sucursal deben ir previamente cancelados, Nos contactaremos a la Brevedad)":
 			return <td className="overlay-correos">Nº Pedido: {num}</td>;
 		default:
 			return <td></td>;
